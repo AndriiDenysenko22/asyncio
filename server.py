@@ -18,12 +18,10 @@ async def handle_echo(reader, writer):
             if text == writer:
                 continue
             text.write(data)
-            # await writer.wait_closed()
 
         print(f"Received {message!r} from {addr!r}")
 
         print(f"Send: {message!r}")
-        # writer.write(data)
         await writer.drain()
 
 
