@@ -20,6 +20,7 @@ class RecevierThread(threading.Thread):
             self.chat.messages.append(message.decode())
             self.chat.redraw()
 
+
 class ChatWindow():
     TITLE = 'Chat'
     USERNAME = 'Ihor Harahatyi'
